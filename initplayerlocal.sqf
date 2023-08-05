@@ -98,3 +98,5 @@ if (_didJIP) then {
     [_newUnit] call SPE_MissionUtilityFunctions_fnc_ReviveToksaInit;
     [_newUnit] call SPE_MissionUtilityFunctions_fnc_ReviveToksaActionsInit;
 }];
+
+PX_earPlugAction = player addAction [("<t color='#00FF00'>Insert Ear Plugs</t>"), {call PX_fnc_earPlugsInsert}, [], 1, false, true];
