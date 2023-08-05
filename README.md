@@ -1,2 +1,2 @@
-# ALiVE_Operation_Cobra.SPE_Normandy
+# ALiVE Operation Cobra
 An Arma 3 multiplayer mission for the Spearhead 1944 CDLC
