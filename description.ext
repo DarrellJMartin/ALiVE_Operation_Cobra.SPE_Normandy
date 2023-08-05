@@ -83,6 +83,6 @@ class Params
 
 class Extended_Init_EventHandlers {
  class LandVehicle {
-  init = "_this call (compile preprocessFileLineNumbers 'Scripts\VRandomize.sqf')";
+  init = "_this call (compile preprocessFileLineNumbers 'Scripts\vehicleInit.sqf')";
  };
 };
