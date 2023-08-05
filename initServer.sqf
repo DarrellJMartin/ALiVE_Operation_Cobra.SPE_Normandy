@@ -24,9 +24,6 @@ if (isDedicated) then  {
      };
 };
 
-SPE_CadetMode = false;
-SPE_HardcoreMode = true;
-
 call (compile preprocessFileLineNumbers "mapmarker\scripts\fn_init.sqf");
 call MM_fnc_startMapMarkerServer;
 
