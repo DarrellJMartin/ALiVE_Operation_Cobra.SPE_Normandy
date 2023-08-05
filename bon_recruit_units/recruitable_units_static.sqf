@@ -1,0 +1,1 @@
+bon_recruit_recruitableunits = [""];
