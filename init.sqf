@@ -44,7 +44,6 @@ if (side player == RESISTANCE) then {
 [] execVM "bon_recruit_units\init.sqf";
 [] execVM "Scripts\Earplugs.sqf";
 [] execVM "Scripts\SquadResetInit.sqf";
-[] execVM "Scripts\autoFlip.sqf";
 
 if (hasInterface) then {
 
