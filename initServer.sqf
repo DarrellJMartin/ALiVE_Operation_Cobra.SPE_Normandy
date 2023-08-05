@@ -24,20 +24,6 @@ if (isDedicated) then  {
      };
 };
 
-call (compile preprocessFileLineNumbers "mapmarker\scripts\fn_init.sqf");
-call MM_fnc_startMapMarkerServer;
-
-if !isMultiplayer then {
-	addMissionEventHandler ["Loaded", {
-		call MM_fnc_stopMapMarkerClient;
-
-		[] spawn {
-			waitUntil {!MM_var_clientRunning};
-			call MM_fnc_startMapMarkerClient;
-		};
-	}];
-};
-
 // Returns array of dates for given year when moon is at its fullest
 fnc_fullMoonDates =
 {
