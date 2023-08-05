@@ -87,11 +87,3 @@ forceWeatherChange;
 
 SPE_IFS_CASAvailability_Side = [east, west, independent];
 publicVariable "SPE_IFS_CASAvailability_Side";
-
-// Revive System By Toksa
-if isServer then
-{
-	waitUntil {time > 0};
-
-	[] call SPE_MissionUtilityFunctions_fnc_ReviveToksaServer;
-};

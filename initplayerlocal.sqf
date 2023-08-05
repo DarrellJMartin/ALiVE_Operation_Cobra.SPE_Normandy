@@ -96,4 +96,5 @@ if (_didJIP) then {
     params ["_group", "_newUnit"];
 
     [_newUnit] call SPE_MissionUtilityFunctions_fnc_ReviveToksaInit;
+    [_newUnit] call SPE_MissionUtilityFunctions_fnc_ReviveToksaActionsInit;
 }];
