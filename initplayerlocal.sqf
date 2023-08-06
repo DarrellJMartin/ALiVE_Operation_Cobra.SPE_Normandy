@@ -46,7 +46,12 @@ SPE_fnc_IFS_hasRadio =
     _hasRadioItem 
 };
 
+SPE_IFS_requestedsupportavailabilitydelay = [[210,210,210],[275,275,275],[200,480,300],[420,420,420]];
 
+SPE_IFS_areablacklist = ["mainblacklist"];
+
+SPE_IFS_shouldBlacklistBlockRequestedSupport = true;
+	
 // save loadout
 [missionnamespace,"arsenalClosed", {[player, [missionNamespace, "inventory_var"]] call BIS_fnc_saveInventory;
 	diag_log format["%1: initPlayerLocal.sqf -> %2 inventory_var saved", missionName, missionNamespace]; 
