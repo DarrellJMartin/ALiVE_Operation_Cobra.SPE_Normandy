@@ -9,6 +9,8 @@
 * 
 * */
 // ====================================================================================
+["Initialize", [true]] call BIS_fnc_dynamicGroups;
+	
 if (isDedicated) then  { 
 	disableRemoteSensors true; 
 };
@@ -66,7 +68,6 @@ skipTime 8;
 0 setfog 0.01; 
 forceWeatherChange;
 
-["Initialize", [true]] call BIS_fnc_dynamicGroups;	
-
 SPE_IFS_CASAvailability_Side = [east, west, independent];
 publicVariable "SPE_IFS_CASAvailability_Side";
+
