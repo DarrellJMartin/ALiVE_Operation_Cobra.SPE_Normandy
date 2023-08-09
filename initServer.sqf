@@ -71,3 +71,8 @@ forceWeatherChange;
 SPE_IFS_CASAvailability_Side = [east, west, independent];
 publicVariable "SPE_IFS_CASAvailability_Side";
 
+[] spawn {
+    waitUntil {!isNil "ALiVE_REQUIRE_INITIALISED" && time > 120};
+    ALiVE_Helper_opcomEventListener = compile preprocessFileLineNumbers "Scripts\opcomEventListener.sqf";
+    opcomEventListener = [nil,"create", ["ALiVE_Helper_opcomEventListener"]] call ALiVE_Helper_opcomEventListener;
+};
