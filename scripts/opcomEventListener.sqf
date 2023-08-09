@@ -41,7 +41,7 @@ switch (_operation) do {
                 //  systemchat format ["OPFOR is preparing an attack on %1", _location];
                 
 									 _title = "<t size='1.5' color='#68a7b7' shadow='1'>INTEL RECEIVED</t><br/>";
-									 _text = format["%1<t>ENEMY is preparing an attack on %2</t>",_title,_location];
+									 _text = format["%1<t>Axis forces are preparing an attack on %2</t>",_title,_location];
 									 { _grpUnits append (units _x);} forEach _xrayGroups;
 									 {["openSideSmall",0.4] remoteExecCall ["ALIVE_fnc_displayMenu", _x];
 								   ["setSideSmallText",_text] remoteExecCall ["ALIVE_fnc_displayMenu", _x];} forEach (_grpUnits);
@@ -53,7 +53,7 @@ switch (_operation) do {
                 //  systemchat format ["OPFOR is preparing an attack on %1", _location];
                 
 									 _title = "<t size='1.5' color='#68a7b7' shadow='1'>INTEL RECEIVED</t><br/>";
-									 _text = format["%1<t>US ARMY is preparing an attack on %2</t>",_title,_location];
+									 _text = format["%1<t>Allied forces are preparing an attack on %2</t>",_title,_location];
 									 { _grpUnits append (units _x);} forEach _xrayGroups;
 									 {["openSideSmall",0.4] remoteExecCall ["ALIVE_fnc_displayMenu", _x];
 								   ["setSideSmallText",_text] remoteExecCall ["ALIVE_fnc_displayMenu", _x];} forEach (_grpUnits);
@@ -69,7 +69,7 @@ switch (_operation) do {
                 //    systemchat format ["OPFOR is initiating it's attack on %1 ", _location];
                 
 									 _title = "<t size='1.5' color='#68a7b7' shadow='1'>INTEL RECEIVED</t><br/>";
-									 _text = format["%1<t>ENEMY is initiating an attack on %2</t>",_title,_location];
+									 _text = format["%1<t>Axis forces are initiating an attack on %2</t>",_title,_location];
 									 { _grpUnits append (units _x);} forEach _xrayGroups;
 									 {["openSideSmall",0.4] remoteExecCall ["ALIVE_fnc_displayMenu", _x];
 								   ["setSideSmallText",_text] remoteExecCall ["ALIVE_fnc_displayMenu", _x];} forEach (_grpUnits);
@@ -81,7 +81,7 @@ switch (_operation) do {
                 //    systemchat format ["OPFOR is initiating it's attack on %1 ", _location];
                 
 									 _title = "<t size='1.5' color='#68a7b7' shadow='1'>INTEL RECEIVED</t><br/>";
-									 _text = format["%1<t>US ARMY is initiating an attack on %2</t>",_title,_location];
+									 _text = format["%1<t>Allied forces are initiating an attack on %2</t>",_title,_location];
 									 { _grpUnits append (units _x);} forEach _xrayGroups;
 									 {["openSideSmall",0.4] remoteExecCall ["ALIVE_fnc_displayMenu", _x];
 								   ["setSideSmallText",_text] remoteExecCall ["ALIVE_fnc_displayMenu", _x];} forEach (_grpUnits);
