@@ -1,4 +1,4 @@
-// File: fn_skipTime.sqf
+// File: skipTime.sqf
 // Count the number of playable units (excluding AI and headless clients)
 _playableUnits = (playableUnits - allUnits select {(_x isKindOf "HeadlessClient_F")});
 

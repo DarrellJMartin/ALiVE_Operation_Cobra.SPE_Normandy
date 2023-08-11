@@ -104,9 +104,3 @@ PX_earPlugAction = player addAction [("<t color='#00FF00'>Insert Ear Plugs</t>")
 
 //Initialize Soldier Tracker Script
 [] execVM "scripts\QS_icons.sqf"; 		
-
-
-_lantern = lantern;
-
-// Add the "Skip 4 hours" action to the lantern
-_lantern addAction ["Skip 4 hours",{[[],"scripts\skipTime.sqf"] remoteExec ["execVM",0];}];

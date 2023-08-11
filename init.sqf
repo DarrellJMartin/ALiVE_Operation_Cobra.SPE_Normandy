@@ -99,7 +99,7 @@ if (hasInterface) then {
        
         
         _start = time;
-        waituntil {(player getvariable ["alive_sys_player_playerloaded",false]) || ((time - _start) > 30)};
+        waituntil {(player getvariable ["alive_sys_player_playerloaded",false]) || ((time - _start) > 10)};
 
 				sleep 3;
 				playMusic "SPE_HoW_Misc_Daniel_Patras_Theme";
@@ -147,14 +147,5 @@ if (hasInterface) then {
 
         ["openSideSmall",0.4] call ALIVE_fnc_displayMenu;
         ["setSideSmallText",_text] call ALIVE_fnc_displayMenu;
-		
-		 sleep 15;
-		_title = "<t size='1.5' color='#68a7b7' shadow='1'>OPERATION COBRA</t><br/>";
-        _text = format["%1<t>You can skip time by using the lantern near the arsenal crate. (Everyone must be at base)</t>",_title];
-
-        ["openSideSmall",0.4] call ALIVE_fnc_displayMenu;
-        ["setSideSmallText",_text] call ALIVE_fnc_displayMenu;
-        
- 
     };
 };
