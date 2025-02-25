@@ -48,6 +48,10 @@ if ((getObjectViewDistance # 0) > 650) then {
 
 setTerrainGrid 3.125;
 
+//Potential fix for SPE Arsenal
+
+[] call SPE_MissionUtilityFunctions_fnc_FilterGearPerSideAndFaction;
+
 waitUntil { !(isNull player) };
 //Restrict Arsenal to US equipement only
 if (side player == RESISTANCE) then {
